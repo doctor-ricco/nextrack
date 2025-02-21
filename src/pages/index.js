@@ -121,12 +121,12 @@ export default function Home() {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="flex justify-between items-center mb-6">
-        <h1 className="text-2xl font-bold">Gestão de Projetos</h1>
+        <h1 className="text-2xl font-bold">NexTrack - Strategic Project Management</h1>
         <Link 
           href="/projects/new" 
           className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded"
         >
-          Novo Projeto
+          New Project
         </Link>
       </div>
 
@@ -161,13 +161,13 @@ export default function Home() {
                   href={`/projects/${project.id}/edit`}
                   className="text-blue-500 hover:text-blue-700"
                 >
-                  Editar
+                  Edit
                 </Link>
                 <button
                   onClick={() => setConfirmDelete({ show: true, id: project.id })}
                   className="text-red-500 hover:text-red-700"
                 >
-                  Excluir
+                  Delete
                 </button>
               </div>
             </div>

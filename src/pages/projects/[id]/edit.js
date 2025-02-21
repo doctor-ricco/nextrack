@@ -82,11 +82,11 @@ export default function EditProject() {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-2xl font-bold mb-6">Editar Projeto</h1>
+      <h1 className="text-2xl font-bold mb-6">Edit Project</h1>
 
       <form onSubmit={handleSubmit} className="max-w-lg">
         <div className="mb-4">
-          <label className="block mb-2">Nome</label>
+          <label className="block mb-2">Name</label>
           <input
             type="text"
             name="name"
@@ -111,7 +111,7 @@ export default function EditProject() {
         </div>
 
         <div className="mb-4">
-          <label className="block mb-2">Descrição</label>
+          <label className="block mb-2">Description</label>
           <textarea
             name="description"
             value={formData.description}
@@ -123,7 +123,7 @@ export default function EditProject() {
         </div>
 
         <div className="mb-4">
-          <label className="block mb-2">Data de Início</label>
+          <label className="block mb-2">Begin Date</label>
           <input
             type="date"
             name="startDate"
@@ -135,7 +135,7 @@ export default function EditProject() {
         </div>
 
         <div className="mb-4">
-          <label className="block mb-2">Data de Fim</label>
+          <label className="block mb-2">End Date</label>
           <input
             type="date"
             name="endDate"
@@ -152,13 +152,13 @@ export default function EditProject() {
             disabled={loading}
             className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 disabled:bg-blue-300"
           >
-            {loading ? 'Salvando...' : 'Salvar'}
+            {loading ? 'Saving...' : 'Save'}
           </button>
           <Link
             href="/"
             className="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600"
           >
-            Cancelar
+            Cancel
           </Link>
         </div>
       </form>

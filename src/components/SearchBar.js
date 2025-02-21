@@ -24,7 +24,7 @@ export default function SearchBar({ onSearch, initialValue = '' }) {
         type="text"
         value={searchTerm}
         onChange={handleChange}
-        placeholder="Buscar por nome, EID ou descrição..."
+        placeholder="Search by name, EID or description..."
         className="w-full px-4 py-2 pr-10 border rounded-lg
                    focus:outline-none focus:ring-2 focus:ring-blue-500
                    dark:bg-gray-800 dark:border-gray-700"
